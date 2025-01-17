@@ -16,6 +16,7 @@
             <th></th>
             <th>Fecha de registro</th>
             <th>Paciente</th>
+            <th>Atendido por:</th>
             <th>Tipo</th>
             <th>Enfermedad(es)</th>
             <th>Medicamentos asignados</th>
@@ -39,6 +40,7 @@
                 {{ ucfirst($casePatient->created_at->translatedFormat('F j, Y')) }}
               </td>
               <td>{{ $casePatient->patient->name . ' ' . $casePatient->patient->last_name }}</td>
+              <td>{{ $casePatient->user->charge . ': ' . $casePatient->user->name . ' ' . $casePatient->user->last_name }}</td>
               <td> <span class="{{ $casePatient->patient->type_patient_id == 1? 'text-primary': 'text-info' }}"  style="font-weight:bold">  {{ $casePatient->patient->typePatient->name }} </span> : {{ $casePatient->patient->career->name }}</td>
               <td>
                 @if(count($casePatient->pathologies) == 0)
