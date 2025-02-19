@@ -39,7 +39,7 @@
                 
                 {{ ucfirst($casePatient->created_at->translatedFormat('F j, Y, g:i A')) }}
               </td>
-              <td>{{ $casePatient->patient->name . ' ' . $casePatient->patient->last_name . ' '}} <span class="text-info">{{ $casePatient->patient->ci }}</span></td>
+              <td>{{ $casePatient->patient->name . ' ' . $casePatient->patient->last_name . ' '}} <span class="text-primary">{{ $casePatient->patient->ci }}</span></td>
               <td>{{ $casePatient->user->charge . ': ' . $casePatient->user->name . ' ' . $casePatient->user->last_name }}</td>
               <td> <span class="{{ $casePatient->patient->type_patient_id == 1? 'text-primary': 'text-info' }}"  style="font-weight:bold">  {{ $casePatient->patient->typePatient->name }} </span> : {{ $casePatient->patient->career->name }}</td>
               <td>
