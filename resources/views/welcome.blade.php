@@ -96,6 +96,14 @@
                   </div>
                 </div>
 
+                <div class="mb-8">
+                  <div class="d-flex justify-content-center mt-8">
+                    <a href="auth-forgot-password-basic.html">
+                      <span>¿Olvidó su contraseña?</span>
+                    </a>
+                  </div>
+                </div>
+
                 <div class="mb-6">
                   <button class="btn btn-primary d-grid w-100" type="submit">Ingresar</button>
                 </div>
