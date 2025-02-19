@@ -37,7 +37,7 @@
               </td>
               <td>
                 
-                {{ ucfirst($casePatient->created_at->translatedFormat('F j, Y')) }}
+                {{ ucfirst($casePatient->created_at->translatedFormat('F j, Y, g:i A')) }}
               </td>
               <td>{{ $casePatient->patient->name . ' ' . $casePatient->patient->last_name }}</td>
               <td>{{ $casePatient->user->charge . ': ' . $casePatient->user->name . ' ' . $casePatient->user->last_name }}</td>
